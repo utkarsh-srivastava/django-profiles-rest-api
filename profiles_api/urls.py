@@ -11,6 +11,8 @@ router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')
 # Django will figure out the name from the model thats assigned to it
 router.register('profile', views.UserProfileViewSet)
 
+router.register('feed', views.UserProfileFeedViewSet)
+
 
 urlpatterns = [
     path('hello-view/', views.HelloApiView.as_view()),
